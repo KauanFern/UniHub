@@ -1,0 +1,3 @@
+# Ambiente de testes: não indexar.
+User-agent: *
+Disallow: /

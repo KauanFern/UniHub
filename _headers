@@ -1,0 +1,13 @@
+# Netlify e Cloudflare Pages. Em outras hospedagens, use o .htaccess (Apache) ou a configuração do servidor.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  # Ative somente depois de confirmar que o HTTPS funciona em todo o domínio:
+  # Strict-Transport-Security: max-age=31536000; includeSubDomains
+/assets/*
+  Cache-Control: public, max-age=3600
+/index.html
+  Cache-Control: no-cache
