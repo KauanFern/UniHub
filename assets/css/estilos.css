@@ -139,3 +139,7 @@
 .ag-act{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.ag-state{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:650;color:#1A8F4B}[data-theme=dark] .ag-state{color:#4ADE80}.ag-act .tag{font-size:11px}
 @media(max-width:700px){.ag-item{grid-template-columns:54px minmax(0,1fr)}.ag-act{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between}.ag-act .btn{flex:1 1 200px}}
 @media(max-width:480px){.busy,.dlg{padding:16px}.busy-card,.dlg-card{padding:22px}.dlg-actions .btn{flex:1 1 140px}}
+
+/* Centralização dos serviços institucionais */
+.service-item{align-items:flex-start;min-height:142px;transition:border-color .18s,box-shadow .18s,transform .18s}.service-item:hover{border-color:var(--aqua-strong);box-shadow:var(--shadow);transform:translateY(-2px)}.service-item .doc-icon{width:44px;height:44px}.service-item .doc-icon svg{width:21px;height:21px}.service-copy{display:grid;gap:5px;min-width:0}.service-copy>strong{font-size:14px;color:var(--text)}.service-copy>span:not(.service-action){font-size:12px;color:var(--muted)}.service-action{display:inline-flex;align-items:center;gap:5px;margin-top:5px;color:var(--aqua-strong);font-size:12px;font-weight:700}.service-action svg{width:14px;height:14px}.services-intro{padding:22px}.services-intro h2{font-size:17px}.services-list{margin-top:20px}
+@media(max-width:760px){.services-intro{padding:16px}.service-item{min-height:0}}
